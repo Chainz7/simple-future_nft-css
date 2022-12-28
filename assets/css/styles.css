@@ -1,0 +1,279 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*==================== VARIABLES CSS ====================*/
+:root {
+    /*========== Colors ==========*/
+    --color-bg: rgb(10, 10, 10);
+    --color-first: #FFFFFF;
+    --color-second: #A29AAD;
+    --color-first-button: rgba(255, 255, 255, 0.1);
+    --color-second-button: #BBF247;
+    --color-third-button: #041000;
+    /*========== Font and typography ==========*/
+    --font-body: 'Lato', sans-serif;
+    /*========== Font size ==========*/
+    --s60-font-size: 3.75rem;
+    --s50-font-size: 3.125rem;
+    --s34-font-size: 2.125rem;
+    --s30-font-size: 1.875rem;
+    --s26-font-size: 1.625rem;
+    --s24-font-size: 1.5rem;
+    --s22-font-size: 1.375rem;
+    --s20-font-size: 1.25rem;
+    --s18-font-size: 1.125rem;
+    --s16-font-size: 1rem;
+    /*========== Font weight ==========*/
+    --s400-font-normal: 400;
+    --s600-font-semibold: 600;
+    --s700-font-bold: 700;
+
+}
+
+/*==================== BASE ====================*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0px solid white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-body);
+    background-color: var(--color-bg);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*==================== REUSABLE CSS CLASSES ====================*/
+
+/*==================== LAYOUT ====================*/
+/* .header {
+    width: 100%;
+    position: fixed;
+} */
+
+/*==================== NAV ====================*/
+.nav__container {
+    font-weight: var(--s600-font-semibold);
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.nav__left {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav__name {
+    color: var(--color-first);
+    font-size: var(--s26-font-size)
+}
+
+.nav__items {
+    display: flex;
+    gap: 3rem;
+}
+
+.nav__item-new {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.nav__link {
+    color: var(--color-second);
+    font-size: var(--s18-font-size);
+}
+
+.nav__link:hover {
+    color: var(--color-first);
+}
+
+.nav__new {
+    color: var(--color-second-button);
+    font-size: 12px;
+    border: 1px solid var(--color-second-button);
+    border-radius: 20px;
+    padding: 0.1rem 0.5rem 0.15rem 0.5rem;
+}
+
+.nav__right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav__login {
+    color: var(--color-second);
+    font-size: var(--s18-font-size);
+}
+
+.nav__login:hover {
+    color: var(--color-first);
+}
+
+.nav__marketplace {
+    color: var(--color-second);
+    font-size: var(--s18-font-size);
+    background-color: var(--color-first-button);
+    border-radius: 10px;
+    padding: 0.4rem 1rem 0.4rem 1rem;
+}
+
+/*==================== DASHBOARD ====================*/
+.dashboard {
+    color: var(--color-first);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-evenly;
+    margin-top: 6rem;
+    margin-left: 5.5rem;
+    margin-right: 5rem;
+}
+
+.dashboard__image1,
+.dashboard__image2 {
+    position: absolute;
+}
+
+.dashboard__image1 {
+    margin: -11.5rem -3.5rem;
+    border: none;
+}
+
+.dashboard__image2 {
+    margin: -54px 536px;
+    border: none;
+}
+
+.dashboard__left {
+    /* border: 3px solid red; */
+    width: 81%;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    row-gap: 2rem;
+    margin-top: 2rem;
+}
+
+.left__titles {
+    display: grid;
+}
+
+.left__title {
+    font-weight: var(--s700-font-bold);
+    font-size: var(--s50-font-size);
+}
+
+.left__descriptions {
+    display: grid;
+}
+
+.left__description {
+    font-weight: var(--s400-font-normal);
+    font-size: var(--s18-font-size);
+    color: var(--color-second);
+}
+
+.left__button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.button__left {
+    width: 12.75rem;
+    height: 3.625rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    align-items: center;
+    background-color: var(--color-second-button);
+    color: var(--color-third-button);
+    border-radius: 40px 40px 40px 40px;
+}
+
+.button__title1 {
+    font-weight: var(--s700-font-bold);
+    font-size: var(--s16-font-size);
+}
+
+.button__item {
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-first);
+    border-radius: 50%;
+}
+
+.button__image1 {
+    width: 20px;
+    height: 20px;
+}
+
+.button__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+}
+
+.button__title2 {
+    font-size: var(--s16-font-size);
+}
+
+
+
+.function__items {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+    width: max-content;
+}
+
+.function__item {
+    display: grid;
+    gap: .5rem;
+}
+
+.item__title {
+    font-size: var(--s30-font-size);
+    font-weight: var(--s700-font-bold);
+}
+
+.item__description {
+    color: var(--color-second);
+    font-size: var(--s16-font-size);
+    font-weight: var(--s400-font-normal);
+}
+
+.left__image {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: -1rem;
+    margin-left: 2rem;
+}
