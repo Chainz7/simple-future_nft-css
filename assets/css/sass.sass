@@ -1,0 +1,281 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap")
+
+/*==================== VARIABLES CSS ====================*/
+/*========== Colors ==========*/
+$color-background: rgb(10, 10, 10)
+$color-white: #FFFFFF
+$color-gray_one: #A29AAD
+$color-gray_two: rgba(255, 255, 255, 0.1)
+$color-black_one: #041000
+$color-lime_one: #BBF247
+/*========== Font and typography ==========*/
+$ff-lato: Lato, sans-serif
+/*========== Font size ==========*/
+$fs-12: 0.75rem
+$fs-16: 1rem
+$fs-18: 1.125rem
+$fs-20: 1.25rem
+$fs-22: 1.375rem
+$fs-24: 1.5rem
+$fs-26: 1.625rem
+$fs-30: 1.875rem
+$fs-34: 2.125rem
+$fs-50: 3.125rem
+$fs-54: 3.375rem
+$fs-60: 3.75rem
+/*========== Font weight ==========*/
+$fw-400: 400
+$fw-500: 500
+$fw-600: 600
+$fw-700: 700
+/*========== Responsive Margin ==========*/
+$mg-0-25: .25rem
+$mg-0-5: .5rem
+$mg-0-75: .75rem
+$mg-1: 1rem
+$mg-1-25: 1.25rem
+$mg-1-5: 1.5rem
+$mg-1-75: 1.75rem
+$mg-2: 2rem
+$mg-2-25: 2.25rem
+$mg-2-5: 2.5rem
+$mg-2-75: 2.75rem
+$mg-3: 3rem
+$mg-3-25: 3.25rem
+$mg-3-5: 3.5rem
+$mg-3-75: 3.75rem
+$mg-4: 4rem
+$mg-4-25: 4.25rem
+$mg-4-5: 4.5rem
+$mg-4-75: 4.75rem
+$mg-5: 5rem
+$mg-5-25: 5.25rem
+$mg-5-5: 5.5rem
+$mg-5-75: 5.75rem
+$mg-6: 6rem
+$mg-6-25: 6.25rem
+$mg-6-5: 6.7rem
+$mg-6-75: 6.75rem
+$mg-8-75: 8.75rem
+
+/*==================== BASE ====================*/
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+    border: 0px solid white
+
+html
+    scroll-behavior: smooth
+
+body
+    margin: 0
+    font-family: $ff-lato
+    font-weight: $fw-500
+    background-color: $color-background
+
+ul
+    list-style: none
+
+a
+    text-decoration: none
+
+img
+    max-width: 100%
+    height: auto
+
+/*==================== REUSABLE CSS CLASSES ====================*/
+
+/*==================== LAYOUT ====================*/
+.container
+    max-width: 100%
+    margin-left: $mg-5-5
+    margin-right: $mg-5-5
+
+.grid
+    display: grid
+
+.header
+    width: 100%
+    top: 0
+    left: 0
+
+/*==================== NAV ====================*/
+.nav
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: $mg-1
+    margin-bottom: $mg-1
+
+.nav__left
+    display: flex
+    justify-content: flex-start
+    gap: $mg-1
+
+.nav__logo2
+    color: $color-white
+    font-size: $fs-26
+
+.nav__items
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: $mg-3
+
+.nav__link
+    color: $color-gray_one
+    font-size: $fs-20
+
+.nav__item-new
+    display: flex
+    align-items: center
+    gap: $mg-0-5
+
+.nav__new
+    display: flex
+    align-items: center
+    justify-content: center
+    border: 1px solid $color-lime_one
+    width: $mg-2-75
+    height: $mg-1-25
+    border-radius: $mg-1-25
+
+.new__item
+    color: $color-lime_one
+    font-size: $fs-12
+    border: none
+
+.nav__right
+    display: flex
+    align-items: center
+    gap: $mg-1-25
+
+.nav__login,
+.marketplace__item
+    color: $color-gray_one
+    font-size: $fs-20
+
+.nav__marketplace
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: $color-gray_two
+    width: $mg-8-75
+    height: $mg-2-75
+    border-radius: $mg-0-5
+
+/*==================== DASHBOARD ====================*/
+.dashboard
+    margin-top: $mg-4-5
+    display: flex
+    justify-content: flex-start
+    color: white
+
+.dashboard__image1
+    position: absolute
+    left: 0
+    top: 0
+
+.dashboard__image2
+    width: 660px
+    height: 757px
+    position: absolute
+    right: 0
+    top: 50%
+    transform: translateY(-50%)
+
+.dashboard__left
+    display: grid
+    gap: $mg-3
+    max-width: 45%
+
+.left__titles
+    display: grid
+    gap: $mg-0-5
+
+.left__title
+    color: $color-white
+    font-weight: $fw-600
+    font-size: $fs-54
+
+.left__descriptions
+    display: grid
+    gap: $mg-0-5
+
+.left__description
+    color: $color-gray_one
+    font-weight: $fw-400
+    font-size: $fs-20
+
+.left__button
+    display: flex
+    gap: $mg-1-75
+
+.button__left
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 274px
+    height: 78px
+    background-color: $color-lime_one
+    border-radius: 80px
+
+.button__titles
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 72%
+    height: 100%
+
+.button__title1
+    color: $color-black_one
+    font-weight: $fw-700
+    font-size: $fs-20
+
+.button__images
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 28%
+    height: 100%
+    background-color: $color-white
+    border-radius: 50%
+
+.button__right
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: $mg-0-5
+
+.button__title2
+    color: $color-white
+    font-weight: $fw-400
+    font-size: $fs-20
+
+.function__items
+    display: flex
+    justify-content: flex-start
+    gap: $mg-2
+
+.function__item
+    display: grid
+    gap: $mg-0-25
+
+.item__title
+    color: $color-white
+    font-weight: $fw-600
+    font-size: $fs-34
+
+.item__description
+    color: $color-gray_one
+    font-weight: $fw-400
+    font-size: $fs-16
+
+.left__image
+    margin-top: -$mg-1-5
+    margin-left: $mg-3-25
+
+.dashboard__right
+    max-width: 55%

@@ -1,0 +1,268 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+/*==================== VARIABLES CSS ====================*/
+/*========== Colors ==========*/
+/*========== Font and typography ==========*/
+/*========== Font size ==========*/
+/*========== Font weight ==========*/
+/*========== Responsive Margin ==========*/
+/*==================== BASE ====================*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0px solid white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Lato, sans-serif;
+  font-weight: 500;
+  background-color: rgb(10, 10, 10);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*==================== REUSABLE CSS CLASSES ====================*/
+/*==================== LAYOUT ====================*/
+.container {
+  max-width: 100%;
+  margin-left: 5.5rem;
+  margin-right: 5.5rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.header {
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+/*==================== NAV ====================*/
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.nav__left {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.nav__logo2 {
+  color: #FFFFFF;
+  font-size: 1.625rem;
+}
+
+.nav__items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.nav__link {
+  color: #A29AAD;
+  font-size: 1.25rem;
+}
+
+.nav__item-new {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav__new {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #BBF247;
+  width: 2.75rem;
+  height: 1.25rem;
+  border-radius: 1.25rem;
+}
+
+.new__item {
+  color: #BBF247;
+  font-size: 0.75rem;
+  border: none;
+}
+
+.nav__right {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.nav__login,
+.marketplace__item {
+  color: #A29AAD;
+  font-size: 1.25rem;
+}
+
+.nav__marketplace {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 8.75rem;
+  height: 2.75rem;
+  border-radius: 0.5rem;
+}
+
+/*==================== DASHBOARD ====================*/
+.dashboard {
+  margin-top: 4.5rem;
+  display: flex;
+  justify-content: flex-start;
+  color: white;
+}
+
+.dashboard__image1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.dashboard__image2 {
+  width: 660px;
+  height: 757px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.dashboard__left {
+  display: grid;
+  gap: 3rem;
+  max-width: 45%;
+}
+
+.left__titles {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.left__title {
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 3.375rem;
+}
+
+.left__descriptions {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.left__description {
+  color: #A29AAD;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+.left__button {
+  display: flex;
+  gap: 1.75rem;
+}
+
+.button__left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 274px;
+  height: 78px;
+  background-color: #BBF247;
+  border-radius: 80px;
+}
+
+.button__titles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 72%;
+  height: 100%;
+}
+
+.button__title1 {
+  color: #041000;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.button__images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28%;
+  height: 100%;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
+
+.button__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.button__title2 {
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+.function__items {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.function__item {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.item__title {
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 2.125rem;
+}
+
+.item__description {
+  color: #A29AAD;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.left__image {
+  margin-top: -1.5rem;
+  margin-left: 3.25rem;
+}
+
+.dashboard__right {
+  max-width: 55%;
+}/*# sourceMappingURL=sass.css.map */

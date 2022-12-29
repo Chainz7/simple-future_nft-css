@@ -7,17 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/sass.css">
     <title>Future NFT</title>
 </head>
 
 <body>
     <!--==================== HEADER ====================-->
     <header class="header">
-        <nav class="nav__container">
+        <nav class="nav container">
             <div class="nav__left">
-                <img class="nav__logo" src="assets/img/logo.png" alt="Api Ijo">
-                <a href="#" class="nav__name">FutureNFT</a>
+                <img class="nav__logo1" src="assets/img/logo.png" alt="Api Ijo">
+                <a class="nav__logo2" href="#">FutureNFT</a>
             </div>
             <div class="nav__center">
                 <ul class="nav__items">
@@ -29,7 +29,9 @@
                     </li>
                     <li class="nav__item-new">
                         <a href="#" class="nav__link">Resource</a>
-                        <a href="#" class="nav__new">New</a>
+                        <a href="#" class="nav__new">
+                            <span class="new__item">New</span>
+                        </a>
                     </li>
                     <li class="nav__item">
                         <a href="#" class="nav__link">Create</a>
@@ -38,7 +40,9 @@
             </div>
             <div class="nav__right">
                 <a href="#" class="nav__login">Login</a>
-                <a href="#" class="nav__marketplace">Marketplace</a>
+                <a href="#" class="nav__marketplace">
+                    <span class="marketplace__item">Marketplace</span>
+                </a>
             </div>
         </nav>
     </header>
@@ -46,11 +50,11 @@
     <!--==================== MAIN ======================-->
     <main class="main">
         <!--==================== DASHBOARD ======================-->
-        <div class="dashboard__image">
-            <img class="dashboard__image1" src="assets/img/Ellipse1.png" alt="">
-            <img class="dashboard__image2" src="assets/img/Ellipse2.png" alt="">
-        </div>
-        <section class="dashboard">
+        <section class="dashboard container">
+            <div class="dashboard__image">
+                <img class="dashboard__image1" src="assets/img/Ellipse1.png" alt="">
+                <img class="dashboard__image2" src="assets/img/Ellipse2.png" alt="">
+            </div>
             <div class="dashboard__left">
                 <div class="left__titles">
                     <span class="left__title">Discover Collect And</span>
@@ -63,15 +67,17 @@
                         you.</span>
                 </div>
                 <div class="left__button">
-                    <div class="button__left">
-                        <span class="button__title1">Explore Market</span>
-                        <span class="button__item">
+                    <a href="#" class="button__left">
+                        <div class="button__titles">
+                            <span class="button__title1">Explore Market</span>
+                        </div>
+                        <div class="button__images">
                             <img class="button__image1" src="assets/img/Button1.png" alt="">
-                        </span>
-                    </div>
+                        </div>
+                    </a>
                     <div class="button__right">
                         <img class="button__image2" src="assets/img/Ellipse3.png" alt="">
-                        <span class="button__title2">Get Early Access</span>
+                        <a href="#" class="button__title2">Get Early Access</a>
                     </div>
                 </div>
                 <div class="left__function">
